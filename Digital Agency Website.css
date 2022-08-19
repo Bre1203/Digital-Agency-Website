@@ -1,0 +1,90 @@
+*{
+   margin: 0;    
+   padding: 0;
+   box-sizing: border-box;
+   font-family: poppins;
+}
+body{
+    background-image: url(file:///C:/Users/Admin/Downloads/b2.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+.navbar{
+    height: 65px;
+    width: 950px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 25px auto 0;
+}
+.navbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 34px;
+    background: #4e4e4e;
+    z-index: -1;
+    transform: skewY(30deg) translateY(11px);
+}
+.navbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 64px;
+    background: #4e4e4e;
+    z-index: -1;
+    transform: skewY(-30deg) translateY(11px);
+}
+nav a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 40px;
+}
+.decor-1{
+    position: absolute;
+    width: 100px;
+    border: 32px solid;
+    right: calc(100% - 36px);
+    top: 22px;
+    z-index: -9;
+    border-color: #111  #111 #111 transparent ;
+}
+.decor-2{
+    position: absolute;
+    width: 100px;
+    border: 32px solid;
+    left: calc(100% - 36px);
+    top: 22px;
+    z-index: -9;
+    border-color: #111 transparent #111 #111;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+}
+.content h2{
+    font-size: 70px;
+}
+.content p{
+    width: 65px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.content a{
+    text-align: none;
+    background: #111;
+    color: #fff;
+    padding: 10px 30px;
+}
